@@ -4,6 +4,7 @@ services:
   api:
     container_name: go-dep-docker-starter_api
     build: api/
+    command: go run main.go
     volumes:
       - ./api/src:/go/src/api
     tty: true
